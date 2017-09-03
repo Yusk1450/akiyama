@@ -1,0 +1,16 @@
+{
+  "name": "nichibi",
+  "version": "1.0.0",
+  "author": "4D Pocket, LLC",
+  "license": "ISC",
+  "description": "空き山情報をオープンにするプラットフォーム",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-sass": "3.1.0",
+    "gulp-watch": "4.3.11",
+    "gulp-sourcemaps": "2.4.1",
+    "gulp-cssmin": "0.1.7",
+    "gulp-rename": "1.2.2",
+    "gulp-sftp": "0.1.5"
+  }
+}

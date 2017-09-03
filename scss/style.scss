@@ -1,0 +1,156 @@
+
+html, body
+{
+	margin           : 0;
+	padding          : 0;
+	height           : 100%;
+	border           : 0;
+	color            : #000;
+	background-color : #fff;
+	font-size        : 14px;
+	font-family      : 'Noto Sans Japanese', serif;
+}
+
+html,
+body,
+a,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-family    : 'Noto Sans Japanese', serif;
+	text-transform : none;
+}
+
+a
+{
+	text-decoration : none;
+}
+
+.clear
+{
+	clear : both;
+}
+
+.form-horizontal
+{
+	margin-top    : 2%;
+	margin-bottom : 6%;
+}
+
+.help-block
+{
+	display   : none;
+	color     : #ff0000;
+	font-size : 0.9em;
+}
+
+.form-group
+{
+	margin-left   : 0 !important;
+	margin-right  : 0 !important;
+	margin-bottom : 1%;
+}
+
+.formHead
+{
+	font-size   : 1.2em;
+	font-weight : bold;
+}
+
+.required
+{
+	color            : #fff;
+	font-size        : 0.8em;
+	padding          : 2px 5px;
+	margin-left      : 3%;
+	background-color : #d9534f;
+	border-radius    : 4px;
+}
+
+.product_item
+{
+	margin-top   : 1%;
+	margin-right : 10px;
+}
+
+.addbtn
+{
+	background-color : #808080;
+	color            : #fff;
+
+	&:hover
+	{
+		background-color : #606060;
+		color            : #fff;
+	}
+}
+
+.estimatebtn
+{
+	background-color : #808080;
+	color            : #fff;
+
+	&:hover
+	{
+		background-color : #606060;
+		color            : #fff;
+	}
+}
+
+.sendbtn
+{
+	margin-top : 8%;
+}
+
+.mailbtn
+{
+	color            : #fff;
+	margin-top       : 2%;
+	background-color : #60b660;
+	border-color     : #60b660;
+
+	&:hover
+	{
+		color            : #fff;
+		background-color : #3f8a3f;
+		border-color     : #3f8a3f;
+	}
+}
+
+.totalPrice
+{
+	span
+	{
+		font-size   : 1.1em;
+		font-weight : bold;
+	}
+}
+
+@media (max-width: 768px) {
+	label
+	{
+		margin-bottom : 2% !important;
+	}
+	.addbtn
+	{
+		margin-top : 5%;
+	}
+	.estimatebtn
+	{
+		margin-top : 5%;
+	}
+	.product_item_index
+	{
+		border-left    : 5px solid #000;
+		border-bottom  : 1px solid #000;
+		margin-top     : 15px;
+		padding-left   : 5px !important;
+		padding-bottom : 2px !important;
+	}
+}
