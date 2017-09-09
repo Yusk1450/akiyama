@@ -34,25 +34,62 @@
 		</div>
 		<hr>
 		<div class="form-group">
-			<label class="control-label col-sm-2 col-xs-5" for="zipcode">森林の住所<span class="required">必須</span></label>
+			<label class="control-label col-sm-2 col-xs-5" for="address">住所<span class="required">必須</span></label>
 			<div class="col-sm-5">
-				<div class="row" style="padding-left: 15px;">
-					<div class="col-sm-4">
-						<input type="text" name="zip21" id="zipcode-1" class="form-control form-required" placeholder="1008111" maxlength="7" onKeyUp="AjaxZip3.zip2addr(this,'','address','address');">
-					</div>
-				</div>
-				<input type="text" name="address" id="address" class="form-control form-required" placeholder="東京都千代田区千代田1-1" style="margin-top: 10px;">
+				<input type="text" id="address" class="form-control form-required" placeholder="岐阜県美濃市">
 				<span class="help-block">項目を入力してください</span>
 			</div>
 		</div>
 		<hr>
 		<div class="form-group">
-			<label class="control-label col-sm-2 col-xs-5" for="mail">樹種<span class="required">必須</span></label>
+			<label class="control-label col-sm-2 col-xs-5" for="place">森林の場所<span class="required">必須</span></label>
 			<div class="col-sm-5">
-				<div class="checkbox"><label><input type="checkbox" value="すぎ">すぎ</label></div>
-				<div class="checkbox"><label><input type="checkbox" value="ひのき">ひのき</label></div>
-				<div class="checkbox"><label><input type="checkbox" value="まつ">まつ</label></div>
-				<div class="checkbox"><label><input type="checkbox" value="広葉樹">広葉樹</label></div>
+				緯度<input type="text" id="latitude" class="form-control form-required" placeholder="35.558372">
+				経度<input type="text" id="longitude" class="form-control form-required" placeholder="136.931079">
+				<div><a href="https://user.numazu-ct.ac.jp/~tsato/webmap/sphere/coordinates/advanced.html" target="_blank">緯度・経度検索サイト（外部サイト）</a></div>
+				<span class="help-block">項目を入力してください</span>
+			</div>
+		</div>
+		<hr>
+		<div class="form-group">
+			<label class="control-label col-sm-2 col-xs-5" for="area">面積（m<sup>2</sup>）<span class="required">必須</span></label>
+			<div class="col-sm-5">
+				<input type="text" id="area" class="form-control form-required" placeholder="10000">
+				<span class="help-block">項目を入力してください</span>
+			</div>
+		</div>
+		<hr>
+		<div class="form-group">
+			<label class="control-label col-sm-2 col-xs-5" for="volume">1ha辺りの材積（m<sup>3</sup>）<span class="required">必須</span></label>
+			<div class="col-sm-5">
+				<input type="text" id="volume" class="form-control form-required" placeholder="500">
+				<span class="help-block">項目を入力してください</span>
+			</div>
+		</div>
+		<hr>
+		<div class="form-group">
+			<label class="control-label col-sm-2 col-xs-5" for="woodType">樹種<span class="required">必須</span></label>
+			<div class="col-sm-5">
+				<div class="checkbox"><label><input type="checkbox" class="woodType" value="すぎ">すぎ</label></div>
+				<div class="checkbox"><label><input type="checkbox" class="woodType" value="ひのき">ひのき</label></div>
+				<div class="checkbox"><label><input type="checkbox" class="woodType" value="まつ">まつ</label></div>
+				<div class="checkbox"><label><input type="checkbox" class="woodType" value="広葉樹">広葉樹</label></div>
+				<span class="help-block">項目を入力してください</span>
+			</div>
+		</div>
+		<hr>
+		<div class="form-group">
+			<label class="control-label col-sm-2 col-xs-5" for="limitation">保安林<span class="required">必須</span></label>
+			<div class="col-sm-5">
+				<div class="checkbox"><label><input type="checkbox" id="limitation" value="制限あり">あり</label></div>					
+				<span class="help-block">項目を入力してください</span>
+			</div>
+		</div>
+		<hr>
+		<div class="form-group">
+			<label class="control-label col-sm-2 col-xs-5" for="route">路網の整備状況<span class="required">必須</span></label>
+			<div class="col-sm-5">
+				<input type="text" id="route" class="form-control form-required" placeholder="林道あり、◯◯駅より◯分 等">
 				<span class="help-block">項目を入力してください</span>
 			</div>
 		</div>
@@ -60,7 +97,7 @@
 		<div class="form-group">
 			<label class="control-label col-sm-2 col-xs-5" for="mail">メール<span class="required">必須</span></label>
 			<div class="col-sm-5">
-				<input type="text" id="mail" class="form-control form-required" placeholder="info@company.com">
+				<input type="text" id="mail" class="form-control form-required" placeholder="info@example.com">
 				<span class="help-block">項目を入力してください</span>
 			</div>
 		</div>
@@ -74,7 +111,7 @@
 		</div>
 		<hr>
 		<div class="form-group">
-			<label class="control-label col-sm-2" for="tell">備考欄</label>
+			<label class="control-label col-sm-2" for="note">備考欄</label>
 			<div class="col-sm-8">
 				<textarea type="text" id="note" class="form-control"></textarea>
 			</div>

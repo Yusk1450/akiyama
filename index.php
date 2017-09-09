@@ -9,5 +9,8 @@ $smarty = new Smarty();
 $smarty->template_dir = './templates';
 $smarty->compile_dir = './templates_c';
 
-// $smarty->assign('key', $key);
+$data = file_get_contents('./data/data.json');
+$data = json_decode($data, true);
+
+$smarty->assign('list', array_reverse($data));
 $smarty->display('index.tpl');

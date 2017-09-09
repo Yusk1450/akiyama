@@ -5,7 +5,7 @@ html, body
 	padding          : 0;
 	height           : 100%;
 	border           : 0;
-	color            : #000;
+	color            : #202223;
 	background-color : #fff;
 	font-size        : 14px;
 	font-family      : 'Noto Sans Japanese', serif;
@@ -39,7 +39,38 @@ a
 
 .container
 {
-	padding-top : 40px;
+}
+
+.forestdata
+{
+	width: 100%;
+	max-width: 800px;
+	margin-top : 7%;
+	margin-bottom: 6%;
+}
+
+.forestdata_title
+{
+	font-size: 1.8em;
+	padding-left: 2%;
+	border-left: 8px solid #202223;
+	border-bottom : 2px solid #202223;
+}
+
+.forestdata_item_area
+{
+	font-size: 1.2em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.forestdata_item
+{
+	width : 65%;
+	letter-spacing: 0.1em;
+	padding-top: 2%;
+	padding-bottom : 2%;
+	padding-left: 2%;
 }
 
 .form-horizontal
